@@ -50,7 +50,8 @@ public class Randomizer {
 
 	public Randomizer getUserInputs(String[] args) {
 		if (args.length != userArgumentsLength) {
-			System.out.println("only 3 arguments are accepted");
+			System.out.println("only "+userArgumentsLength+" arguments are accepted");
+			System.exit(0);
 		}
 		this.pathname = args[0];
 		try {
